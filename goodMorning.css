@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+.TitleClass {
+    animation: colorChange 3s infinite alternate;
+    text-align: center;
+    font-family: Comic Sans MS
+}
+
+.catdiv {
+    max-width: 200px;
+    max-height: 200px;
+    background-color: lightgray;
+}
+
+.divcat {
+    max-width: none;
+    width: 100%;
+}
+
+#cat2 {
+    float: right;
+}
+
+.news {}
