@@ -39,11 +39,11 @@ fetch('https://newsapi.org/v2/top-headlines?country=pt', {
     })
     .then(data => {
         console.log(data["articles"][0]);
-        document.getElementById("article1").textContent = data["articles"][0][""];
-        document.getElementById("article2").textContent = data["articles"][1];
-        document.getElementById("article3").textContent = data["articles"][2];
-        document.getElementById("article4").textContent = data["articles"][3];
-        document.getElementById("article5").textContent = data["articles"][4];
+        document.getElementById("news1").textContent = data["articles"][0]["title"];
+        document.getElementById("news2").textContent = data["articles"][1]["title"];
+        document.getElementById("news3").textContent = data["articles"][2]["title"];
+        document.getElementById("news4").textContent = data["articles"][3]["title"];
+        document.getElementById("news5").textContent = data["articles"][4]["title"];
     })
     .catch(error => {
         console.error('There was a problem with your fetch operation:', error);

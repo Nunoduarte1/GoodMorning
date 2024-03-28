@@ -27,6 +27,7 @@ body {
     font-family: Comic Sans MS
 }
 
+/*CATS///////////////////////////////////////////////////////////////////////*/
 .catdiv {
     max-width: 200px;
     max-height: 200px;
@@ -42,4 +43,23 @@ body {
     float: right;
 }
 
-.news {}
+/*NEWS///////////////////////////////////////////////////////////////////////*/
+.news {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    /* Align items to the bottom */
+    height: 60vh;
+    /* Set the height of the container to full viewport height */
+    margin-left: 10px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    width: calc(20% - 0px);
+    margin-bottom: 20px;
+}
